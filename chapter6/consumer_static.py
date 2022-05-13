@@ -2,9 +2,9 @@ from confluent_kafka import Consumer
 import socket
 
 hostname = socket.gethostname()
-broker = 'peter-kafka01.foo.bar'
-group = 'peter-consumer02'
-topic = 'peter-test06'
+broker = 'kisu-kafka01.foo.bar'
+group = 'kisu-consumer02'
+topic = 'kisu-test06'
 
 c = Consumer({
     'bootstrap.servers': broker,

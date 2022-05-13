@@ -40,12 +40,12 @@
 - name: create root
   shell: |
     kadmin.local -q "addprinc -pw {{ kadmin_pass }} root/admin"
-    kadmin.local -q "add_principal -randkey peter-kafka01.foo.bar@FOO.BAR"
-    kadmin.local -q "add_principal -randkey peter-kafka02.foo.bar@FOO.BAR"
-    kadmin.local -q "add_principal -randkey peter-kafka03.foo.bar@FOO.BAR"
-    kadmin.local -q "add_principal -randkey peter-zk01.foo.bar@FOO.BAR"
-    kadmin.local -q "add_principal -randkey peter-zk02.foo.bar@FOO.BAR"
-    kadmin.local -q "add_principal -randkey peter-zk03.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-kafka01.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-kafka02.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-kafka03.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-zk01.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-zk02.foo.bar@FOO.BAR"
+    kadmin.local -q "add_principal -randkey kisu-zk03.foo.bar@FOO.BAR"
 
 - name: make sure a service is running
   systemd:

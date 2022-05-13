@@ -3,7 +3,7 @@
   become: true
   connection: ssh
   vars:
-    - zookeeperinfo: peter-zk01.foo.bar:2181,peter-zk02.foo.bar:2181,peter-zk03.foo.bar:2181/kafka3
+    - zookeeperinfo: kisu-zk01.foo.bar:2181,kisu-zk02.foo.bar:2181,kisu-zk03.foo.bar:2181/kafka3
     - dir_path: /data/kafka3-logs
   roles:
     - kafka

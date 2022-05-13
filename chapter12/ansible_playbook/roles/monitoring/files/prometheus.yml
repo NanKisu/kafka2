@@ -4,44 +4,44 @@ global:
   evaluation_interval: 5s
 
 scrape_configs:
-  - job_name: 'peter-jmx-kafka1'
+  - job_name: 'kisu-jmx-kafka1'
     static_configs:
       - targets:
-        - peter-kafka01.foo.bar:7071
-        - peter-kafka02.foo.bar:7071
-        - peter-kafka03.foo.bar:7071
+        - kisu-kafka01.foo.bar:7071
+        - kisu-kafka02.foo.bar:7071
+        - kisu-kafka03.foo.bar:7071
 
-  - job_name: 'peter-jmx-kafka2'
+  - job_name: 'kisu-jmx-kafka2'
     static_configs:
       - targets:
-        - peter-zk01.foo.bar:7071
-        - peter-zk02.foo.bar:7071
-        - peter-zk03.foo.bar:7071
+        - kisu-zk01.foo.bar:7071
+        - kisu-zk02.foo.bar:7071
+        - kisu-zk03.foo.bar:7071
 
-  - job_name: 'peter-kafka1-exporter'
+  - job_name: 'kisu-kafka1-exporter'
     static_configs:
       - targets:
-        - peter-kafka01.foo.bar:9308
-        - peter-kafka02.foo.bar:9308
-        - peter-kafka03.foo.bar:9308
+        - kisu-kafka01.foo.bar:9308
+        - kisu-kafka02.foo.bar:9308
+        - kisu-kafka03.foo.bar:9308
 
-  - job_name: 'peter-kafka2-exporter'
+  - job_name: 'kisu-kafka2-exporter'
     static_configs:
       - targets:
-        - peter-zk01.foo.bar:9308
-        - peter-zk02.foo.bar:9308
-        - peter-zk03.foo.bar:9308
+        - kisu-zk01.foo.bar:9308
+        - kisu-zk02.foo.bar:9308
+        - kisu-zk03.foo.bar:9308
 
   - job_name: 'node-exporter-kafka1'
     static_configs:
       - targets:
-        - peter-kafka01.foo.bar:9100
-        - peter-kafka02.foo.bar:9100
-        - peter-kafka03.foo.bar:9100
+        - kisu-kafka01.foo.bar:9100
+        - kisu-kafka02.foo.bar:9100
+        - kisu-kafka03.foo.bar:9100
 
   - job_name: 'node-exporter-kafka2'
     static_configs:
       - targets:
-        - peter-zk01.foo.bar:9100
-        - peter-zk02.foo.bar:9100
-        - peter-zk03.foo.bar:9100
+        - kisu-zk01.foo.bar:9100
+        - kisu-zk02.foo.bar:9100
+        - kisu-zk03.foo.bar:9100

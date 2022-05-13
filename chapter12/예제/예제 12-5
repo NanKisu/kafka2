@@ -28,13 +28,13 @@ def delivery_report(err, msg):
         print('Message delivered to {} [{}]'.format(msg.topic(), msg.offset()))
 
 avroProducer = AvroProducer({
-    'bootstrap.servers': 'peter-kafka01.foo.bar,peter-kafka02.foo.bar,peter-kafka03.foo.bar',
+    'bootstrap.servers': 'kisu-kafka01.foo.bar,kisu-kafka02.foo.bar,kisu-kafka03.foo.bar',
     'on_delivery': delivery_report,
-    'schema.registry.url': 'http://peter-kafka03.foo.bar:8081'
+    'schema.registry.url': 'http://kisu-kafka03.foo.bar:8081'
     }, default_value_schema=value_schema)
 
 for x in range(5):
     value = {"name": names.get_first_name(), "class": random.randint(1,5), "phone": random.randint(1000,9999), "age": random.randint(10,20)}  # 전송할 메시지
-    avroProducer.produce(topic='peter-avro01-kafka1', value=value)
+    avroProducer.produce(topic='kisu-avro01-kafka1', value=value)
 
 avroProducer.flush()

@@ -2,10 +2,10 @@ import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 
-public class PeterProducerCallback implements Callback { //콜백을 사용하기 위해 org.apache.kafka.clients.producer.Callback를 구현하는 클래스가 필요함.
+public class kisuProducerCallback implements Callback { //콜백을 사용하기 위해 org.apache.kafka.clients.producer.Callback를 구현하는 클래스가 필요함.
     private ProducerRecord<String, String> record;
 
-    public PeterProducerCallback(ProducerRecord<String, String> record) {
+    public kisuProducerCallback(ProducerRecord<String, String> record) {
         this.record = record;
     }
 

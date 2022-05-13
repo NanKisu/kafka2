@@ -2,7 +2,7 @@
   "version": 1,
   "partitions": [
     {
-      "topic": "peter-scaleout1",
+      "topic": "kisu-scaleout1",
       "partition": 0,
       "replicas": [
         2
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "topic": "peter-scaleout1",
+      "topic": "kisu-scaleout1",
       "partition": 1,
       "replicas": [
         3
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "topic": "peter-scaleout1",
+      "topic": "kisu-scaleout1",
       "partition": 2,
       "replicas": [
         4
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "topic": "peter-scaleout1",
+      "topic": "kisu-scaleout1",
       "partition": 3,
       "replicas": [
         1

@@ -2,6 +2,6 @@ KafkaServer {
     com.sun.security.auth.module.Krb5LoginModule required
     useKeyTab=true
     storeKey=true
-    keyTab="/usr/local/kafka/keytabs/peter-kafka01.service.keytab"
-    principal="kafka/peter-kafka01.foo.bar@FOO.BAR";
+    keyTab="/usr/local/kafka/keytabs/kisu-kafka01.service.keytab"
+    principal="kafka/kisu-kafka01.foo.bar@FOO.BAR";
 };

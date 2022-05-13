@@ -1,8 +1,8 @@
 from confluent_kafka import Consumer
 
-broker = 'peter-kafka01.foo.bar, peter-kafka02.foo.bar, peter-kafka03.foo.bar'
-group = 'peter-consumer01'
-topic = 'peter-test06'
+broker = 'kisu-kafka01.foo.bar, kisu-kafka02.foo.bar, kisu-kafka03.foo.bar'
+group = 'kisu-consumer01'
+topic = 'kisu-test06'
 
 c = Consumer({
     'bootstrap.servers': broker,

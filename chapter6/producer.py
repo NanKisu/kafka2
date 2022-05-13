@@ -1,7 +1,7 @@
 from confluent_kafka import Producer
 
-broker = 'peter-kafka01.foo.bar, peter-kafka02.foo.bar, peter-kafka03.foo.bar'
-topic = 'peter-test06'
+broker = 'kisu-kafka01.foo.bar, kisu-kafka02.foo.bar, kisu-kafka03.foo.bar'
+topic = 'kisu-test06'
 
 p = Producer({'bootstrap.servers': broker,
               'compression.codec': 'lz4',

@@ -18,12 +18,12 @@ value_schema_str = """
 value_schema = avro.loads(value_schema_str)
 
 c = AvroConsumer({
-    'bootstrap.servers': 'peter-kafka01.foo.bar,peter-kafka02.foo.bar,peter-kafka03.foo.bar',
+    'bootstrap.servers': 'kisu-kafka01.foo.bar,kisu-kafka02.foo.bar,kisu-kafka03.foo.bar',
     'group.id': 'python-groupid02',
     'auto.offset.reset': 'earliest',
-    'schema.registry.url': 'http://peter-kafka03.foo.bar:8081'},reader_value_schema=value_schema)
+    'schema.registry.url': 'http://kisu-kafka03.foo.bar:8081'},reader_value_schema=value_schema)
 
-c.subscribe(['peter-avro2'])
+c.subscribe(['kisu-avro2'])
 
 while True:
     try:

@@ -4703,8 +4703,8 @@
         "allValue": null,
         "current": {
           "selected": true,
-          "text": "peter-jmx-kafka",
-          "value": "peter-jmx-kafka"
+          "text": "kisu-jmx-kafka",
+          "value": "kisu-jmx-kafka"
         },
         "datasource": "Prometheus",
         "definition": "label_values(kafka_controller_KafkaController_Value, job)",

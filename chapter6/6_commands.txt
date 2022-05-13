@@ -14,20 +14,20 @@ P192
 python producer.py
 
 P193
-/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server peter-kafka01.foo.bar:9092 --group peter-consumer01 --describe
+/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kisu-kafka01.foo.bar:9092 --group kisu-consumer01 --describe
 
 P194
-/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server peter-kafka01.foo.bar:9092 --group peter-consumer01 --describe
+/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kisu-kafka01.foo.bar:9092 --group kisu-consumer01 --describe
 
 P197
 python consumer_static.py
-/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server peter-kafka01.foo.bar:9092 --group peter-consumer02 --describe
+/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kisu-kafka01.foo.bar:9092 --group kisu-consumer02 --describe
 
 P198
-/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server peter-kafka01.foo.bar:9092 --group peter-consumer02 --describe
+/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kisu-kafka01.foo.bar:9092 --group kisu-consumer02 --describe
 
 P199
-/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server peter-kafka01.foo.bar:9092 --group peter-consumer02 --describe
+/usr/local/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kisu-kafka01.foo.bar:9092 --group kisu-consumer02 --describe
 
 P213
 cd kafka2/chapter6/
@@ -36,4 +36,4 @@ java -jar ExactlyOnceConsumer.jar
 P214
 cd kafka2/chapter5/
 java -jar ExactlyOnceProducer.jar
-/usr/local/kafka/bin/kafka-dump-log.sh --print-data-log --files /data/kafka-logs/peter-test05-0/00000000000000000000.log
+/usr/local/kafka/bin/kafka-dump-log.sh --print-data-log --files /data/kafka-logs/kisu-test05-0/00000000000000000000.log
