@@ -26,7 +26,7 @@ c = AvroConsumer({
 
 c.subscribe(['src.kisu-avro01-kafka1'])
 
-es = Elasticsearch('http://kisu-kafka02.foo.bar:9200')
+es = Elasticsearch('kisu-kafka02.foo.bar:9200')
 index = 'students'
 
 while True:
